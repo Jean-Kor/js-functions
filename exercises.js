@@ -4,7 +4,7 @@
 * i.e. A function to generate a greeting to specific person you designate:*/
 
 // Step One: Define the function.
-function greeting(guest){ // takes in a parameter named 'guest' which acts like a local variable inside the function
+/*function greeting(guest){ // takes in a parameter named 'guest' which acts like a local variable inside the function
  return "Good afternoon " + guest + ".";  // the output value after the function is invoked
 }
 greeting("Mr. Smith"); // invoking or calling the function to execute the code (instructions) inside the function.
@@ -26,7 +26,8 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-
+var num1 = 'bango1';
+var num2 = 'bango2';
 
 /*
  * #2
@@ -42,10 +43,14 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `sum`.
  * Console.log `sum` to test your code.
 */
+/*function add(num1, num2){
+	return num1 + num2;
+}
 
+var sum = num1 + num2;
 
-
-
+console.log(sum);
+*/
 /*
  * #3
  * Function - subtract
@@ -60,9 +65,13 @@ console.log(testGreeting); // printing the output value of the function.
  * Console.log `difference` to test your code.
 */ 
 
+function subtract(num1, num2){
+	return num1 - num2;
+}
 
+var difference = num1 - num2;
 
-
+console.log(difference);
 
 
 /*
@@ -192,7 +201,7 @@ console.log(testGreeting); // printing the output value of the function.
 */ 
 
 
-}
+
 
 
 /*
