@@ -43,14 +43,14 @@ var num2 = 'bango2';
  * Invoke the function and assign it to a variable named `sum`.
  * Console.log `sum` to test your code.
 */
-/*function add(num1, num2){
+/*function add(num1, num2) {
 	return num1 + num2;
 }
 
-var sum = num1 + num2;
+var sum = add(10,5);
 
 console.log(sum);
-*/
+
 /*
  * #3
  * Function - subtract
@@ -64,12 +64,12 @@ console.log(sum);
  * Invoke the function and assign it to a variable named `difference`.
  * Console.log `difference` to test your code.
 */ 
-
+/*
 function subtract(num1, num2){
 	return num1 - num2;
 }
 
-var difference = num1 - num2;
+var difference = subtract(10,5);
 
 console.log(difference);
 
@@ -87,9 +87,14 @@ console.log(difference);
  * Invoke the function and assign it to a variable named `product`.
  * Console.log `product` to test your code.
 */
+/*
+function multiply(num1, num2){
+	return num1 * num2;
+}
 
+var product = multiply(10,5);
 
-
+console.log(product);
 
 /*
  * #5
@@ -104,8 +109,14 @@ console.log(difference);
  * Invoke the function and assign it to a variable named `quotient`.
  * Console.log `quotient` to test your code.
 */
+/*
+function divide(num1, num2){
+	return num1/num2;
+}
 
+var quotient = divide(10,5);
 
+console.log(quotient);
 
 /*
  * #6
