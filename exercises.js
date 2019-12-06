@@ -266,9 +266,14 @@ console.log(answer);
  *
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
-function createFullname(firstname, lastname){
-
+/*
+function createFullName(firstName, lastName){
+	return firstName + lastName;
 }
+
+var myFullName = createFullName('Jeanette Lei', ' Ulanday');
+
+console.log(myFullName);
 
 
 /*
@@ -284,8 +289,14 @@ function createFullname(firstname, lastname){
  * This function will use the previous `createFullName` function above to create a message. For example, if you invoked the function like this: eatFood("Biggie", "Smalls", "Won Ton Soup"); it will display the message "Biggie Smalls eats Won Ton Soup everyday for breakfast."
  * Console.log your result.
  */
+/*
+function eatFood(firstName, lastName, food){
+	return firstName + ' ' + lastName + ' likes to eat' + ' ' + food + '.';
+}
 
+var message = eatFood('Jeanette Lei', 'Ulanday', 'salmon');
 
+console.log(message);
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -299,8 +310,14 @@ function createFullname(firstname, lastname){
  * Create a function that will take in a parameter named `inches`. This function will convert inches to centimeters(cm).
  * Console.log your result. 
 */
+/*
+function shoeSize(inches){
+	return inches*2.54;
+}
 
+var centimeters = shoeSize(7);
 
+console.log(centimeters);
 
 /*
  * #15
@@ -311,7 +328,14 @@ function createFullname(firstname, lastname){
  * Example input: "believe you can and you're halfway there."
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
- 
+/*
+ function allCaps(str){
+ 	return str.toUpperCase();
+ }
+
+ var result = allCaps('greetings humans.');
+
+ console.log(result);
 
 
 /*
@@ -321,8 +345,14 @@ function createFullname(firstname, lastname){
  * This function will capitalize only the first letter in the variable phase above. 
  * Console.log your result.
 */
+/*
+function oneCap(str){
+	return str.substring(0,1).toUpperCase() + str.substring(1);
+}
 
+var cap = oneCap('nice weather.');
 
+console.log(cap);
 
 /*
  * #17
@@ -334,17 +364,26 @@ function createFullname(firstname, lastname){
  * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
+function verifyDrinkingAge(age){
+	return age>21;
+ }
 
+var canDrink = verifyDrinkingAge(39);
 
+console.log(canDrink);
 
 /**
  * #18
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
+function throwParty(canDrink){
+	return (canDrink>21) ? 'Cheee Hoo! We going to da party!' : 'Meh, see you at Starbucks.';
+}
 
+var canParty = throwParty(39);
 
-
+console.log(canParty);
 
 
 
